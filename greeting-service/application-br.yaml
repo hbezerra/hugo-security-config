@@ -17,5 +17,5 @@ management: # Configurações do Actuator, configuração para indicar quais end
       show-details: AlWAYS
 
 greeting-service:
-  greeting: "Oi, "
+  greeting: "Oi, Estou alterando sem finalizar o seviço do service"
   defaultValue: "Mundo!"
