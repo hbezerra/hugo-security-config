@@ -1,0 +1,21 @@
+server: # Indicando que o servidor irá rodar na porta 8080 ;
+  port: 8080
+
+spring:
+  application:
+    name: greeting-service
+
+
+management: # Configurações do Actuator, configuração para indicar quais endpoints expor e quais não expor ;
+  endpoints:
+    web:
+      exposure:
+        include:
+          - '*'
+  endpoint: # Configurando o /actuator/health para exibir todos os detalhes ;
+    health:
+      show-details: AlWAYS
+
+greeting-service:
+  greeting: "Hello, "
+  defaultValue: "World!"
